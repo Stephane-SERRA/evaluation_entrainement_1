@@ -3,10 +3,18 @@ header {
   height: 10%;
 }
 
-.image {
+.image-header {
   padding: 5%;
 }
 
 nav {
   background-color: rgb(81, 12, 146);
+}
+
+.article {
+  text-align: justify;
+}
+
+.description {
+  width: 400px;
 }
