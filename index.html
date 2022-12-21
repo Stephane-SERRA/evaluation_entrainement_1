@@ -14,24 +14,44 @@
     <title>Mon premier site</title>
   </head>
   <body>
-    <!--EN TETE-->
-    <header
-      class="row justify-content-evenly container-fluid d-flex text-white text-center"
-    >
-      <div class="row col-4 col-md-2 d-flex">
-        <div class="image">
-          <img
-            src="violette.jpg"
-            class="img-fluid rounded-circle img-thumbnail"
-          />
+    <div class="container-fluid">
+      <!--EN TETE-->
+      <header class="py-2">
+        <div class="row justify-content-evenly align-items-center">
+          <!--image-->
+          <div class="col-4 col-md-2 px-3">
+            <div class="image">
+              <img
+                src="violette.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+              />
+            </div>
+          </div>
+          <!--titre-->
+          <div class="col text-white text-center">
+            <div class="main-title">
+              <h1>Association des Producteurs de Violettes de Toulouse</h1>
+              <p>Organismes de développement économique</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row col-8 col-md-10 mt-3">
-        <div class="main-title">
-          <h1>Association des Producteurs de Violettes de Toulouse</h1>
-          <p>Organismes de développement économique</p>
-        </div>
-      </div>
-    </header>
+        <!--barre de navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">ACCUEIL</a>
+            <div class="barre" id="navbarColor02">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Evènements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nous contacter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
   </body>
 </html>

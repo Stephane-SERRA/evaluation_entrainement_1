@@ -6,3 +6,7 @@ header {
 .image {
   padding: 5%;
 }
+
+nav {
+  background-color: rgb(81, 12, 146);
+}
