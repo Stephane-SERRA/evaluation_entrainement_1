@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 header {
   background-color: rgb(81, 12, 146);
   height: 10%;
@@ -17,4 +21,16 @@ nav {
 
 .description {
   width: 400px;
+}
+
+footer {
+  background-color: rgb(81, 12, 146);
+  height: 100px;
+}
+
+.pied-de-page {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
