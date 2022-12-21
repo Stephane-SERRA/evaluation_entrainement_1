@@ -115,6 +115,7 @@
       </div>
       <!--PIED-DE-PAGE-->
       <footer class="row">
+        <!--pagination-->
         <nav
           class="col-4 col-md-3 d-flex justify-content-center align-items-center"
           aria-label="page-navigation"
@@ -141,6 +142,7 @@
             </li>
           </ul>
         </nav>
+        <!--message de pied-de-page-->
         <div
           class="col-6 d-flex text-white justify-content-center align-items-center"
         >
@@ -149,14 +151,66 @@
             faites un don en ligne
           </p>
         </div>
+        <!--bouton "faire un don"-->
         <div
           class="col-2 col-md-3 d-flex justify-content-center align-items-center"
         >
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary" type="button">Faire un don</button>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#email"
+            >
+              Faire un don
+            </button>
           </div>
         </div>
       </footer>
+      <!--fenêtre modale "faire un don"-->
+      <div
+        class="modal fade"
+        id="email"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="emailTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="emailTitle">Email</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Vous souhaitez faire un don pour notre association. Nous vous en
+                sommes grandement reconnaissants. En cliquant sur le bouton
+                "Confirmer" ci-dessous, vous accèderez au formulaire
+                d'inscription sur notre plate-forme de paiement sécurisée. Si
+                vous avez changé d'avis, vous pouvez fermer cette fenêtre en
+                cliquant sur le bouton "Abandonner".
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Confirmer</button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Abandonner
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin de la modale-->
     </div>
   </body>
 </html>
