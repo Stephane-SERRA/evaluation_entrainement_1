@@ -13,5 +13,189 @@
     />
     <title>Contact</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!--EN-TETE-->
+      <header class="py-2">
+        <div class="row justify-content-evenly align-items-center">
+          <!--image en-tête-->
+          <div class="col-4 col-md-2 px-3">
+            <div class="image-header">
+              <img
+                src="images/violette.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+              />
+            </div>
+          </div>
+          <!--titre-->
+          <div class="col text-white text-center">
+            <div class="main-title">
+              <h1>Association des Producteurs de Violettes de Toulouse</h1>
+              <p>Organismes de développement économique</p>
+            </div>
+          </div>
+        </div>
+        <!--barre de navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">NOUS CONTACTER</a>
+            <div class="barre" id="navbarColor02">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Retour à l'accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="evenements.html">Evénements</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--CORPS-->
+      <div class="container d-flex mt-4">
+        <!--texte de contact-->
+        <div class="row p-2">
+          <div class="col-12 col-lg-8 me-3">
+            <h2>Vous souhaitez prendre contact avec l'association ?</h2>
+            <p class="article">
+              Si vous souhaitez en savoir un peu plus sur notre association,
+              nous rendre visite, ou même nous faire part de vos suggestions
+              concernant les évènements, n'hésitez pas à faire une demande via
+              le formulaire suivant. Nous vous répondrons dans les plus brefs
+              délais.
+            </p>
+            <p class="article">
+              Pour toutes démarches professionnelles ou administratives, vous
+              pouvez également nous contacter par courrier à l'adresse
+              ci-dessous.
+            </p>
+            <div class="d-flex justify-content-center mt-4">
+              <p class="adress">
+                Association des producteurs de Violettes de Toulouse<br />3899
+                Chemin des Puisatiers 31200 TOULOUSE<br />SIRET:81984689400018
+              </p>
+            </div>
+            <div class="justify-content-center d-flex mb-2">
+              <img src="images/toulouse.jpg" class="img-thumbnail" />
+            </div>
+          </div>
+          <!--formulaire-->
+          <div class="col me-2">
+            <form>
+              <h4 class="section-header">Formulaire de contact</h4>
+              <div class="form-group mb-3 mt-4">
+                <label for="name">Votre nom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Nom"
+                  required
+                />
+                <label for="firstname">Votre prénom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="Prénom"
+                  required
+                />
+                <label for="phone">Votre numéro de téléphone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="0600000000"
+                />
+                <label for="email">Votre e-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="email@mail.com"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="message">Message</label>
+                <textarea
+                  rows="10"
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  aria-describedby="text"
+                  placeholder="Saisissez votre message"
+                  required
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary btn-lg">
+                  Envoyer
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--PIED-DE-PAGE-->
+      <footer class="row d-flex mt-4">
+        <!--pagination-->
+        <nav
+          class="col-4 col-md-3 d-flex justify-content-center align-items-center mt-4"
+          aria-label="page-navigation"
+        >
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous"
+                ><span aria-hidden="true">&laquo;</span></a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="index.html">A</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="evenements.html">1</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Next"
+                ><span aria-hidden="true">&raquo;</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--message de pied-de-page-->
+        <div
+          class="col-6 d-flex text-white justify-content-center align-items-center mt-2"
+        >
+          <p class="pied-de-page">
+            Aidez nous a faire vivre l'association,<br />
+            faites un don en ligne
+          </p>
+        </div>
+        <!--bouton "faire un don"-->
+        <div
+          class="col-2 col-md-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#email"
+            >
+              Faire un don
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
