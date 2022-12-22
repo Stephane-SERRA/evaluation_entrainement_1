@@ -11,12 +11,39 @@ header {
   padding: 5%;
 }
 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-title {
+  margin-top: 1%;
+}
+
+.subtitle {
+  margin-top: 3%;
+}
+
 nav {
   background-color: rgb(81, 12, 146);
 }
 
-.article {
+.navbar-brand {
+  margin-left: 2%;
+}
+
+.article,
+.article1,
+.article2 {
   text-align: justify;
+}
+
+.article1 {
+  margin-right: 2%;
+}
+
+.article2 {
+  max-width: 400px;
+  font-size: smaller;
 }
 
 .description {
@@ -32,11 +59,16 @@ footer {
   text-align: center;
   font-size: 1em;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .adress {
   text-align: center;
   font-weight: bold;
   font-family: Arial, sans-serif;
+}
+
+.formulary {
+  background-color: rgb(201, 148, 251);
+  border-radius: 10px;
 }
